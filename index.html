@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H & A COLLECTIONS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-beige { color: #D4C3A3; }
+        .bg-beige { background-color: #F5F5F0; }
+    </style>
+</head>
+<body class="bg-white text-zinc-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-widest">H & A <em>Collections</em></a>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+                <a href="#collections" class="hover:text-zinc-500 transition">Collections</a>
+                <a href="#about" class="hover:text-zinc-500 transition">Our Story</a>
+                <a href="#services" class="hover:text-zinc-500 transition">Services</a>
+                <a href="#contact" class="hover:text-zinc-500 transition">Contact</a>
+            </div>
+            <a href="#contact" class="bg-zinc-900 text-white px-6 py-2 text-xs uppercase tracking-widest hover:bg-zinc-700 transition">Book Consult</a>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="relative h-screen flex items-center justify-center text-center text-white hero-bg">
+        <div class="max-w-3xl px-6">
+            <p class="uppercase tracking-[0.3em] mb-4 text-sm animate-pulse">New Collection 2026</p>
+            <h1 class="text-5xl md:text-7xl mb-8 leading-tight">Elevating Modern Craftsmanship</h1>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#collections" class="bg-white text-zinc-900 px-10 py-4 uppercase text-xs tracking-widest font-semibold hover:bg-zinc-200 transition">Shop Collection</a>
+                <a href="#services" class="border border-white px-10 py-4 uppercase text-xs tracking-widest font-semibold hover:bg-white hover:text-zinc-900 transition">Bespoke Design</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. About the Brand -->
+    <section id="about" class="py-24 px-6 bg-beige">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=1000" alt="Designer at work" class="shadow-2xl">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl mb-6">The Essence of H & A</h2>
+                <p class="text-zinc-600 leading-relaxed mb-6 italic">"Fashion is not just what you wear; it's the story you tell without speaking."</p>
+                <p class="text-zinc-600 leading-relaxed mb-8">Founded on the principles of timeless elegance and sustainable craftsmanship, Aura creates pieces for the modern visionary. Every stitch is handled with precision, ensuring that your garment is as unique as your journey.</p>
+                <a href="#" class="text-zinc-900 font-semibold border-b-2 border-zinc-900 pb-1 hover:text-zinc-500 transition">Learn More About Our Process</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Featured Collections -->
+    <section id="collections" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl mb-4">Curated Collections</h2>
+            <div class="h-1 w-20 bg-zinc-900 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Item 1 -->
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1539109132381-31a15b2c5a47?auto=format&fit=crop&q=80&w=1000" class="w-full h-[500px] object-cover transition duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="text-xl mb-1">Modern Minimalist</h3>
+                <p class="text-zinc-500 text-sm uppercase tracking-widest">Luxury Essentials</p>
+            </div>
+            <!-- Item 2 -->
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=1000" class="w-full h-[500px] object-cover transition duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="text-xl mb-1">Evening Gala</h3>
+                <p class="text-zinc-500 text-sm uppercase tracking-widest">Bridal & Formal</p>
+            </div>
+            <!-- Item 3 -->
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1000" class="w-full h-[500px] object-cover transition duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="text-xl mb-1">Urban Edge</h3>
+                <p class="text-zinc-500 text-sm uppercase tracking-widest">Streetwear Luxe</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Services Section -->
+    <section id="services" class="py-24 px-6 bg-zinc-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl mb-4">Personalized Experiences</h2>
+                <p class="text-zinc-400">Tailored solutions for the discerning individual.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center p-8 border border-zinc-800">
+                    <h3 class="text-2xl mb-4">Bespoke Design</h3>
+                    <p class="text-zinc-400 text-sm mb-6">One-of-a-kind garments designed exclusively for your body and style.</p>
+                    <p class="text-xs uppercase tracking-widest">Starting at N 29,999.99</p>
+                </div>
+                <div class="text-center p-8 border border-zinc-800 bg-zinc-800/30">
+                    <h3 class="text-2xl mb-4">Styling Consult</h3>
+                    <p class="text-zinc-400 text-sm mb-6">A 1-on-1 session to curate your seasonal wardrobe or special event look.</p>
+                    <p class="text-xs uppercase tracking-widest">90 Minute Session</p>
+                </div>
+                <div class="text-center p-8 border border-zinc-800">
+                    <h3 class="text-2xl mb-4">Alterations</h3>
+                    <p class="text-zinc-400 text-sm mb-6">Precision tailoring to ensure your luxury garments fit like a second skin.</p>
+                    <p class="text-xs uppercase tracking-widest">By Appointment Only</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Call-to-Action -->
+    <section class="py-20 bg-beige text-center px-6">
+        <h2 class="text-4xl mb-8 italic">Ready to redefine your style?</h2>
+        <a href="#contact" class="inline-block bg-zinc-900 text-white px-12 py-5 uppercase text-xs tracking-[0.2em] font-bold hover:bg-zinc-700 transition">Book Your Consultation</a>
+    </section>
+
+    <!-- 8. Contact & Social -->
+    <footer id="contact" class="py-24 px-6 bg-white border-t border-zinc-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl mb-8 text-zinc-900">Get In Touch</h2>
+                <form class="space-y-6">
+                    <input type="text" placeholder="Full Name" class="w-full border-b border-zinc-300 py-3 focus:outline-none focus:border-zinc-900 transition bg-transparent">
+                    <input type="email" placeholder="Email Address" class="w-full border-b border-zinc-300 py-3 focus:outline-none focus:border-zinc-900 transition bg-transparent">
+                    <textarea placeholder="Tell us about your project" rows="4" class="w-full border-b border-zinc-300 py-3 focus:outline-none focus:border-zinc-900 transition bg-transparent"></textarea>
+                    <button class="bg-zinc-900 text-white px-10 py-3 uppercase text-xs tracking-widest font-bold">Send Message</button>
+                </form>
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="space-y-4">
+                    <p class="uppercase tracking-widest text-sm font-bold">Contact Details</p>
+                    <p class="text-zinc-500">handacollections.com</p>
+                    <p class="text-zinc-500">+234 806 830 5959</p>
+                    <p class="text-zinc-500">001 H&A Way, Fashion District<br>Ebgeda, Lagos</p>
+                </div>
+                <div class="pt-12">
+                    <p class="uppercase tracking-widest text-sm font-bold mb-4">Follow Us</p>
+                    <div class="flex space-x-6 text-zinc-400">
+                        <a href="#" class="hover:text-zinc-900 transition underline underline-offset-8">Instagram</a>
+                        <a href="#" class="hover:text-zinc-900 transition underline underline-offset-8">TikTok</a>
+                        <a href="#" class="hover:text-zinc-900 transition underline underline-offset-8">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-24 pt-8 border-t border-zinc-100 text-center text-xs text-zinc-400 uppercase tracking-[0.2em]">
+            &copy; 2026 H & A Collections. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
