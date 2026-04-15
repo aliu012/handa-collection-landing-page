@@ -2,7 +2,11 @@
   const submitBtn = document.getElementById('submit-btn');
   const btnText = document.getElementById('btn-text');
   const spinner = document.getElementById('spinner');
-  
+  const modal = document.getElementById('custom-modal');
+  const overlay = document.getElementById('modal-overlay');
+  const modalMsg = document.getElementById('modal-message');
+  const okBtn = document.getElementById('modal-ok-btn');
+    
   form.addEventListener('submit', async function(event) {
     event.preventDefault(); // Stop page reload
 
@@ -10,6 +14,18 @@
     submitBtn.disabled = true;
     btnText.textContent = 'Sending...';
     spinner.classList.remove('hidden');
+
+    function showModal(message) {
+  modalMsg.textContent = message;
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+}
+
+// Function to close the modal
+okBtn.addEventListener('click', () => {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
 
     // 1. Collect the data from the form
     const formData = new FormData(form);
@@ -29,14 +45,14 @@
       });
 
       if (response.ok) {
-        alert("Success! The designer has received your message.");
+        showModal("Success! The designer has received your message.");
         form.reset();
       } else {
         const errorData = await response.json();
-        alert("Submission failed: " + (errorData.error || "Unknown error"));
+        showModal("Submission failed: " + errorData.error);
       }
     } catch (error) {
-      alert("Network error. Please check your internet connection.");
+      showModal("Network error. Please check your internet connection.");
     } finally {
       // Hide loading state
       submitBtn.disabled = false;
